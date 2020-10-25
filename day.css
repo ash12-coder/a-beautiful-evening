@@ -1,0 +1,193 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    height: 100%;
+    width: 100%;
+    background-image:linear-gradient(to top, red, yellow);
+    background-repeat: no-repeat;
+    animation: change 25s linear;
+}
+@keyframes change{
+    0%{
+        background-image:linear-gradient(to top, red, yellow);        
+    }
+    90%{
+        background-image:linear-gradient(to top, rgb(31, 30, 30),rgb(32, 78, 202));
+    }
+    100%{
+        background-image:linear-gradient(to top, black, blue);
+
+    }
+}
+#sun{
+    float: left;
+    height:150px;
+    width: 150px;
+    border-radius: 50%;
+    background-image: radial-gradient(red,orange);
+    margin-left: 430px;
+    animation: down 20s linear;
+    visibility: hidden;
+    z-index: 50;
+}
+@keyframes down{
+    0%{
+        visibility: visible;
+    }
+
+    100%{
+        transform: translateY(250px);
+        opacity: 0;
+    }
+}
+#mountain{
+    display: inline;
+    z-index:500;
+}
+#mountain #m2{
+    float: left;
+    margin-top: 50px;
+    transform: scaleX(-1);
+}
+#mountain #m1{
+    float: left;
+    margin-top: 50px;
+}
+#tree #t1{
+    float: left;
+    margin-top: -200px;
+    
+}
+#tree #t2{
+    float: right;
+    margin-top: -200px;
+    transform: scaleX(-1);
+}
+#tree #t3{
+    float: left;
+    margin-top: -200px;
+    margin-left: 250px;
+}
+#bird #b1{
+    float: left;
+    margin-top: -400px;
+    animation: b1 5s linear infinite;
+}
+#bird #b2{
+    float: left;
+    margin-top: -200px;
+    animation: b2 7s linear infinite;
+}
+#bird #b3{
+    float: right;
+    animation: b3 9s linear infinite;
+}
+#bird #b4{
+    float:left;
+    animation: b4 2s linear infinite;
+}
+@keyframes b1{
+   0%{
+       transform: translateX(0px);
+   }
+   100%{
+       transform: translateX(900px);
+       opacity: .1;
+   }
+}
+@keyframes b2{
+    0%{
+        transform: translateX(0px);
+    }
+    100%{
+        transform: translateX(900px);
+    }
+}
+@keyframes b3{
+    0%{
+        transform: translateY(100px);
+
+    }
+    100%{
+        transform: translateX(-900px);
+    }
+}
+@keyframes b4{
+    0%{
+        opacity: .1;
+        transform: translateX(0px);
+    }
+    100%{
+        transform: translateX(350px);
+    }
+}
+#leaf #l1{
+    float: left;
+    margin-top: -100px;
+    margin-left: 50px;
+    animation: l1 5s linear infinite;
+}
+#leaf #l2{
+    float: left;
+    margin-top: -200px;
+    margin-left: 300px;
+    animation: l2 5s linear infinite;
+}
+#leaf #l3{
+    float: left;
+    margin-top: -40px;
+    animation: l3 10s linear infinite;
+}
+#leaf #l4{
+    float: left;
+    margin-top: -150px;
+    margin-left: 50px;
+}
+@keyframes l1{
+    0%{
+        transform: rotate(180deg);
+    }
+    100%{
+        transform: translateY(70px);
+    }
+}
+@keyframes l2{
+    0%{
+        transform: rotate(180deg);
+    }
+    100%{
+        transform: translateY(150px);
+    }
+}
+@keyframes l3{
+    0%{
+        transform: translateX(-10px);
+        transform: rotate(180deg);
+    }
+    100%{
+        
+        transform: translateX(500px);
+        
+    }
+}
+#parkbench #bench1{
+    float: left;
+    margin-top: -100px;
+}
+#parkbench #bench2{
+    float: right;
+    margin-top: -100px;
+    transform: scaleX(-1);
+}
+.grass #g1{
+    float: left;
+    margin-top:-125px;
+}
+.grass #g2{
+    float: left;
+    margin-left: 450px;
+    margin-top: -125px;
+    transform: scaleX(-1);
+}
